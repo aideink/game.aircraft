@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="100" viewBox="0 0 60 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Main body -->
+    <path d="M30 90 L35 20 L30 10 L25 20 L30 90 Z" 
+          fill="#4a4a4a" stroke="#2a2a2a" stroke-width="2"/>
+    
+    <!-- Wings -->
+    <path d="M30 40 L45 60 L45 50 L30 30" 
+          fill="#5a5a5a" stroke="#2a2a2a" stroke-width="2"/>
+    <path d="M30 40 L15 60 L15 50 L30 30" 
+          fill="#5a5a5a" stroke="#2a2a2a" stroke-width="2"/>
+    
+    <!-- Tail -->
+    <path d="M30 15 L45 5 L45 10 L30 20" 
+          fill="#5a5a5a" stroke="#2a2a2a" stroke-width="2"/>
+    <path d="M30 15 L15 5 L15 10 L30 20" 
+          fill="#5a5a5a" stroke="#2a2a2a" stroke-width="2"/>
+    
+    <!-- Cockpit -->
+    <ellipse cx="30" cy="65" rx="3" ry="8" 
+             fill="#6a9ec7" stroke="#2a2a2a" stroke-width="1"/>
+             
+    <!-- Engine details -->
+    <rect x="23" y="15" width="14" height="10" 
+          fill="#3a3a3a" stroke="#2a2a2a" stroke-width="1"/>
+</svg> 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Shooter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #000033, #000066);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .game-container {
+            position: relative;
+        }
+
+        canvas {
+            border: 3px solid #4488ff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #4488ff;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzAwMDAzMyIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjI1MCIgcj0iMiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==');
+        }
+
+        .game-stats {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 16px;
+            text-shadow: 0 0 5px #4488ff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 200px;
+        }
+
+        .power-bar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 150px;
+            height: 20px;
+            border: 2px solid #4488ff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .power-fill {
+            height: 100%;
+            background: linear-gradient(to right, #4488ff, #88ccff);
+            width: 0%;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="game-stats">
+            <div id="score">Score: 0</div>
+            <div id="level">Level: 1</div>
+        </div>
+        <div class="power-bar">
+            <div class="power-fill" id="powerFill"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
